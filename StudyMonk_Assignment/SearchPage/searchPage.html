@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candidate Search</title>
+  <link rel="stylesheet" href="searchStyle.css">
+
+</head>
+<body>
+  <div class="searchpage_container">
+    <h1>Candidate Search</h1>
+
+    <form id="search-form">
+      <label for="location">Location:</label>
+      <select id="location">
+        <option value="">Any</option>
+        <option value="New York">New York</option>
+        <option value="San Francisco">San Francisco</option>
+        <option value="London">London</option>
+        <option value="Berlin">Berlin</option>
+      </select>
+  
+      <label for="role">Job Role:</label>
+      <select id="role">
+        <option value="">Any</option>
+        <option value="Developer">Developer</option>
+        <option value="Designer">Designer</option>
+        <option value="Project Manager">Project Manager</option>
+        <option value="Data Analyst">Data Analyst</option>
+      </select>
+  
+      <input type="submit" value="Search">
+    </form>
+  
+    <div class="candidates" id="candidates-list">
+      <!-- Fetched candidates will be displayed here -->
+    </div>
+  </div>
+  
+  <script src="searchScript.js"></script>
+</body>
+</html>

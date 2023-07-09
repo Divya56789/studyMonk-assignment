@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.signUpPage{
+    display:flex;
+    height: 100vh;
+    flex-direction: row;
+}
+.greenImage{
+    display: flex;
+    flex:50%;
+    background-image: url("../assets/wave_pic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.signUp{
+    flex:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.signup__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+}
+.getStarted{
+    text-align: center;
+    padding: 1rem;
+    font-size: larger;
+}
+form{
+    width: 100%;
+}
+.formContainer{
+    display: flex;
+    flex-direction: column;
+}
+.logoSite{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap:1rem;
+    text-align: center;
+}
+.logoSite .logos{
+    display: flex;
+    gap:1rem;
+}
+.logos a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 7px;
+    opacity: 8;
+    padding: 0.5rem 0.7rem;
+    cursor: pointer;
+    box-shadow: 10px 10px 15px gainsboro;
+    z-index:1;
+
+}
+
+.userName, .email, .password{
+    display: block;
+    padding:1rem 0;
+}
+label{
+    color:gray;
+    font-size: larger;
+}
+#nameText, #emailId, #password{
+    width:100%;
+  background: none;
+  border:none;
+  border-bottom: 2px solid teal;
+  outline: none;  
+  padding:0.7rem 0;
+  
+} 
+form .signup__btn{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    /* padding: 10px 20px; */
+    padding:0.7rem 1rem;
+    background-color: teal;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.greenContent{
+    padding:1rem 0;
+    font-size: larger;
+}
+
+@media screen and (max-width: 800px){
+    .signUpPage{
+        display:flex;
+        flex-direction: column;
+    } 
+    
+}
+

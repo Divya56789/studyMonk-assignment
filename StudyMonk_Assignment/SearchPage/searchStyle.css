@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(225, 241, 240);
+
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  form {
+    margin: 20px auto;
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:1rem
+  }
+
+  label {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    color:rgb(1, 105, 98);
+  }
+
+  select, input[type="submit"] {
+    padding: 10px;
+    width: 100%;
+    
+  }
+  input[type="submit"]{
+    background-color: rgb(30, 190, 178);
+    border-radius: 1rem;
+    font-size: large;
+    border:none;
+    outline:none;
+  }
+  .candidates {
+    max-width: 800px;
+    margin: 20px auto;
+   
+  }
+
+  .candidate {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border:2px solid rgb(1, 105, 98);
+   box-shadow: 10px 10px 15px gainsboro;
+   border-radius: 10px;
+  }
+
+  .candidate img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+
+  .candidate-details {
+    flex-grow: 1;
+  }
